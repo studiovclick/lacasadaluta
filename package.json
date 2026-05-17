@@ -1,0 +1,36 @@
+{
+  "name": "la-casa-da-luta",
+  "version": "1.0.0",
+  "description": "Centro de treinamento de artes marciais com projeto social para crianças e adolescentes.",
+  "main": "assets/js/main.js",
+  "scripts": {
+    "start": "http-server -p 8000 -c-1",
+    "dev": "http-server -p 8000 -c-1 --watch",
+    "build": "npm run minify:css && npm run minify:js",
+    "minify:css": "cleancss -o assets/css/style.min.css assets/css/style.css assets/css/responsive.css",
+    "minify:js": "terser assets/js/main.js -o assets/js/main.min.js && terser assets/js/menu.js -o assets/js/menu.min.js",
+    "lint": "eslint assets/js/",
+    "format": "prettier --write assets/js/ assets/css/"
+  },
+  "keywords": [
+    "artes marciais",
+    "muay thai",
+    "boxe",
+    "jiu-jitsu",
+    "projeto social"
+  ],
+  "author": "La Casa da Luta",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "clean-css-cli": "^5.6.0",
+    "terser": "^5.19.0",
+    "prettier": "^3.0.0",
+    "eslint": "^8.45.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lacasadaluta/website.git"
+  },
+  "homepage": "https://lacasadaluta.com.br"
+}

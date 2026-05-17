@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Centro de treinamento de artes marciais com projeto social para crianças e adolescentes."
+    />
+    <meta name="author" content="La Casa da Luta" />
+    <meta
+      name="keywords"
+      content="artes marciais, muay thai, boxe, jiu-jitsu, projeto social"
+    />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lacasadaluta.com.br" />
+    <meta
+      property="og:title"
+      content="La Casa da Luta - Centro de Artes Marciais"
+    />
+    <meta
+      property="og:description"
+      content="Centro de treinamento de artes marciais com projeto social para crianças e adolescentes."
+    />
+    <meta property="og:image" content="assets/img/logo.png" />
+    <meta property="og:site_name" content="La Casa da Luta" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+
+    <!-- PWA MANIFEST -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#1a1a1a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Casa da Luta" />
+    <link rel="apple-touch-icon" href="assets/img/icon-192.png" />
+
+    <title>La Casa da Luta</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- AOS ANIMATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- ===================================== -->
+    <!-- HEADER -->
+    <!-- ===================================== -->
+
+    <header class="header">
+      <!-- BOTÃO MENU MOBILE -->
+
+      <button
+        class="mobile-menu-button"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+
+      <!-- MENU MOBILE -->
+
+      <div class="mobile-menu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#modalidades">Modalidades</a>
+        <a href="#projeto-social">Projeto Social</a>
+        <a href="#mestres">Mestres</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <div class="container nav-container">
+        <!-- LOGO -->
+        <div class="logo">
+          <img src="assets/img/logo.png" alt="Logo La Casa da Luta" />
+        </div>
+
+        <!-- MENU -->
+        <nav class="menu">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#modalidades">Modalidades</a>
+          <a href="#projeto-social">Projeto Social</a>
+          <a href="#mestres">Mestres</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <!-- BOTÃO WHATSAPP -->
+        <a
+          href="https://wa.me/5551994698455"
+          class="btn-whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Enviar mensagem via WhatsApp"
+        >
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+          Fale Conosco
+        </a>
+      </div>
+    </header>
+
+    <!-- ===================================== -->
+    <!-- HERO -->
+    <!-- ===================================== -->
+
+    <section class="hero" id="inicio">
+      <!-- OVERLAY ESCURO -->
+      <div class="overlay"></div>
+
+      <div class="container hero-content">
+        <h1 data-aos="fade-up">
+          CENTRO DE TREINAMENTO DE
+          <span>ARTES MARCIAIS</span>
+        </h1>
+
+        <p data-aos="fade-up" data-aos-delay="200">
+          Disciplina, respeito e transformação através do esporte.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#modalidades" class="btn-primary">
+            Conheça as Modalidades
+          </a>
+
+          <a href="#projeto-social" class="btn-secondary"> Projeto Social </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================== -->
+    <!-- SOBRE -->
+    <!-- ===================================== -->
+
+    <section class="about" id="sobre">
+      <div class="container about-container">
+        <div class="about-text" data-aos="fade-right">
+          <h2>Sobre Nós</h2>
+
+          <p>
+            Somos um centro de treinamento especializado em artes marciais.
+            Nosso objetivo é desenvolver atletas, fortalecer famílias e
+            transformar vidas através da disciplina.
+          </p>
+        </div>
+
+        <div class="about-image" data-aos="fade-left">
+          <img
+            src="assets/img/hero-bg.jpg"
+            alt="Treinamento de artes marciais"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================== -->
+    <!-- MODALIDADES -->
+    <!-- ===================================== -->
+
+    <section class="modalidades" id="modalidades">
+      <div class="container">
+        <h2 class="section-title">Modalidades</h2>
+
+        <div class="cards">
+          <!-- CARD -->
+
+          <div class="card">
+            <img src="assets/img/modalidades/muaythai.png" />
+
+            <h3>Muay Thai</h3>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/modalidades/boxe.png" />
+
+            <h3>Boxe</h3>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/modalidades/kickboxing.png" />
+
+            <h3>Kickboxing</h3>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/modalidades/jiujitsu.png" />
+
+            <h3>Jiu-Jitsu</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================== -->
+    <!-- PROJETO SOCIAL -->
+    <!-- ===================================== -->
+
+    <section class="social-project" id="projeto-social">
+      <div class="container social-container">
+        <!-- TEXTO -->
+        <div class="social-text">
+          <h2>
+            Projeto Social
+            <span>Legião da Luta</span>
+          </h2>
+
+          <p>
+            Nosso projeto social oferece aulas gratuitas para crianças e
+            adolescentes em situação de vulnerabilidade.
+          </p>
+
+          <!-- ESTATÍSTICAS -->
+
+          <div class="stats">
+            <div class="stat">
+              <h3>+200</h3>
+              <p>Crianças atendidas</p>
+            </div>
+
+            <div class="stat">
+              <h3>+1000</h3>
+              <p>Aulas realizadas</p>
+            </div>
+          </div>
+
+          <!-- BOTÕES -->
+
+          <div class="social-buttons">
+            <a href="#" class="btn-primary"> Quero Ajudar </a>
+
+            <a href="#" class="btn-secondary"> Seja Parceiro </a>
+          </div>
+        </div>
+
+        <!-- IMAGEM -->
+
+        <div class="social-image">
+          <img src="assets/img/projeto-social.jpg" alt="Projeto social" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================== -->
+    <!-- MESTRES -->
+    <!-- ===================================== -->
+
+    <section class="masters" id="mestres">
+      <div class="container">
+        <h2 class="section-title">Nossos Mestres</h2>
+
+        <div class="master-cards">
+          <!-- PROFESSOR -->
+
+          <div class="master-card">
+            <img
+              src="assets/img/professores/gustavo.jpg"
+              alt="Professor Gustavo - Instrutor de Jiu-Jitsu"
+            />
+
+            <h3>Prof. Gustavo</h3>
+
+            <p>Jiu-Jitsu</p>
+
+            <button
+              onclick="abrirWhats('Professor Gustavo', '5551994698455')"
+              aria-label="Enviar mensagem para Professor Gustavo via WhatsApp"
+            >
+              Falar no WhatsApp
+            </button>
+          </div>
+
+          <!-- PROFESSOR -->
+
+          <div class="master-card">
+            <img
+              src="assets/img/professores/andre.jpg"
+              alt="Professor André - Instrutor de Muay Thai"
+            />
+
+            <h3>Prof. André</h3>
+
+            <p>Muay Thai</p>
+
+            <button
+              onclick="abrirWhats('Professor André', '5551994698455')"
+              aria-label="Enviar mensagem para Professor André via WhatsApp"
+            >
+              Falar no WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================== -->
+    <!-- CTA FINAL -->
+    <!-- ===================================== -->
+
+    <section class="cta">
+      <div class="container">
+        <h2>Pronto para começar?</h2>
+
+        <p>Venha fazer parte da família La Casa da Luta.</p>
+
+        <a
+          href="https://wa.me/5551994698455"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary"
+          aria-label="Agendar aula experimental via WhatsApp"
+        >
+          Agendar Aula Experimental
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <!-- LOGO -->
+
+        <div>
+          <h2>La Casa da Luta</h2>
+
+          <p>
+            Centro de treinamento de artes marciais focado em transformação
+            através do esporte.
+          </p>
+        </div>
+
+        <!-- LINKS -->
+
+        <div>
+          <h3>Links</h3>
+
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#modalidades">Modalidades</a></li>
+            <li><a href="#projeto-social">Projeto Social</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTATO -->
+
+        <div>
+          <h3>Contato</h3>
+
+          <p>(51) 9469-8455</p>
+
+          <p>@lacasadaluta1</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- CONFIG GLOBAL -->
+    <script src="assets/js/config.js"></script>
+
+    <!-- APP MODULES -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/carrousel.js"></script>
+    <script src="assets/js/whatsapp.js"></script>
+
+    <!-- EXTERNAL LIBRARIES -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      // Inicializar AOS (Animate On Scroll)
+      AOS.init({
+        duration: 800,
+        once: false,
+        mirror: true,
+      });
+    </script>
+
+    <!-- SERVICE WORKER (PWA) -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("sw.js")
+            .then((reg) => console.log("✓ Service Worker registrado"))
+            .catch((err) => console.log("✗ Service Worker erro:", err));
+        });
+      }
+    </script>
+
+    <!-- ===================================== -->
+    <!-- WHATSAPP FLUTUANTE -->
+    <!-- ===================================== -->
+
+    <button
+      class="floating-whatsapp glow"
+      aria-label="Botão flutuante do WhatsApp"
+      title="Clique para abrir WhatsApp"
+    >
+      <i class="bi bi-whatsapp" aria-hidden="true"></i>
+    </button>
+
+    <!-- ===================================== -->
+    <!-- DEPOIMENTOS -->
+    <!-- ===================================== -->
+
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Depoimentos</h2>
+
+        <div class="testimonial-wrapper">
+          <!-- CARD -->
+
+          <div class="testimonial-card" role="article">
+            <p>"A La Casa da Luta mudou minha vida."</p>
+
+            <h3>João V.</h3>
+          </div>
+
+          <!-- CARD -->
+
+          <div class="testimonial-card" role="article">
+            <p>"Meu filho evoluiu muito no projeto social."</p>
+
+            <h3>Juliana M.</h3>
+          </div>
+
+          <!-- CARD -->
+
+          <div class="testimonial-card" role="article">
+            <p>"Professores excelentes e ambiente familiar."</p>
+
+            <h3>Carlos T.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

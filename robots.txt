@@ -1,0 +1,21 @@
+# La Casa da Luta - Robots.txt
+# Instruções para crawlers e motores de busca
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Sitemaps
+Sitemap: https://lacasadaluta.com.br/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1

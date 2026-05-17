@@ -1,0 +1,35 @@
+/* TABLETS */
+
+@media(max-width: 992px){
+
+    .menu {
+
+        display: none;
+
+    }
+
+    .hero h1 {
+
+        font-size: 50px;
+
+    }
+
+}
+
+/* CELULARES */
+
+@media(max-width: 768px){
+
+    .hero h1 {
+
+        font-size: 40px;
+
+    }
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
