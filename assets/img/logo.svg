@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 190" role="img" aria-labelledby="title desc">
+  <title id="title">Grenal da Luta</title>
+  <desc id="desc">Escudo dividido em azul e vermelho com o nome Grenal da Luta</desc>
+  <defs>
+    <clipPath id="shield">
+      <path d="M28 18h142v78c0 43-30 69-71 82C58 165 28 139 28 96V18z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#shield)">
+    <rect x="28" y="18" width="71" height="160" fill="#0d3b78"/>
+    <rect x="99" y="18" width="71" height="160" fill="#c8102e"/>
+    <path d="M28 18h142v78c0 43-30 69-71 82C58 165 28 139 28 96V18z" fill="none" stroke="#fff" stroke-width="6"/>
+    <path d="M99 18v145" stroke="#fff" stroke-width="4" opacity=".9"/>
+    <path d="M55 62h88M55 82h88" stroke="#fff" stroke-width="7" opacity=".95"/>
+  </g>
+  <path d="M28 18h142v78c0 43-30 69-71 82C58 165 28 139 28 96V18z" fill="none" stroke="#fff" stroke-width="6"/>
+  <text x="198" y="88" fill="#fff" font-family="Oswald, Impact, sans-serif" font-size="54" font-weight="700" letter-spacing="1">GRENAL</text>
+  <text x="201" y="137" fill="#4ea3d8" font-family="Roboto, Arial, sans-serif" font-size="31" font-weight="700" letter-spacing="5">DA LUTA</text>
+  <path d="M201 151h265" stroke="#c8102e" stroke-width="5"/>
+</svg>

@@ -20,6 +20,12 @@
 
 @media(max-width: 768px){
 
+    .logo img {
+
+        width: 185px;
+
+    }
+
     .hero h1 {
 
         font-size: 40px;

@@ -56,6 +56,22 @@ body {
 
 }
 
+.logo {
+
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+.logo img {
+
+    display: block;
+    width: 250px;
+    height: auto;
+
+}
+
 .menu {
 
     display: flex;
