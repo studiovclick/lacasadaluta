@@ -1,10 +1,11 @@
 :root {
 
-    --black: #050505;
-    --gold: #c89b3c;
-    --dark-gold: #8f6a20;
+    --black: #06111f;
+    --gold: #0d3b78;
+    --dark-gold: #08284f;
     --white: #ffffff;
-    --gray: #1b1b1b;
-    --red: #7a0d0d;
+    --gray: #101f31;
+    --red: #c8102e;
+    --sky-blue: #4ea3d8;
 
 }

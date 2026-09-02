@@ -22,7 +22,7 @@ ANIMAÇÃO FLUTUANTE
 
 /*
 ========================================
-EFEITO GLOW DOURADO
+EFEITO GLOW DA IDENTIDADE
 ========================================
 */
 
@@ -31,21 +31,24 @@ EFEITO GLOW DOURADO
     0% {
 
         box-shadow:
-        0 0 5px rgba(200,155,60,0.3);
+        0 0 5px rgba(78,163,216,0.3),
+        0 0 12px rgba(200,16,46,0.15);
 
     }
 
     50% {
 
         box-shadow:
-        0 0 20px rgba(200,155,60,0.8);
+        0 0 20px rgba(78,163,216,0.8),
+        0 0 36px rgba(200,16,46,0.35);
 
     }
 
     100% {
 
         box-shadow:
-        0 0 5px rgba(200,155,60,0.3);
+        0 0 5px rgba(78,163,216,0.3),
+        0 0 12px rgba(200,16,46,0.15);
 
     }
 
