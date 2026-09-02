@@ -29,6 +29,14 @@ body {
 
 }
 
+.central-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 /* HEADER */
 
 .header {
@@ -100,8 +108,13 @@ body {
     height: 100vh;
 
     background:
-        url('../img/hero-bg.jpg')
-        center/cover no-repeat;
+        linear-gradient(105deg, rgba(6,17,31,0.78), rgba(13,59,120,0.42) 55%, rgba(200,16,46,0.28)),
+        radial-gradient(circle at top left, rgba(78,163,216,0.38), transparent 42%),
+        #071622;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     display: flex;
     align-items: center;
@@ -380,6 +393,66 @@ HOVER
     box-shadow: 0 0 0 6px rgba(37,211,102,0.16), 0 10px 24px rgba(37,211,102,0.3);
 
 }
+/*
+========================================
+CTA E CONTATO
+========================================
+*/
+
+.cta {
+    background: linear-gradient(135deg, rgba(13,59,120,0.34), rgba(200,16,46,0.18));
+    padding: 90px 0;
+}
+
+.cta-inner,
+.contact-inner {
+    gap: 18px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-card {
+    background: rgba(16,31,49,0.9);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 18px;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+.contact-card i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(78,163,216,0.12);
+    color: var(--sky-blue);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    color: var(--sky-blue);
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 8px;
+}
+
+.contact-card a {
+    color: var(--sky-blue);
+    font-weight: 700;
+}
+
 /*
 ========================================
 DEPOIMENTOS

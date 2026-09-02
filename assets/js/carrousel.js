@@ -5,6 +5,11 @@
 
 const Carousel = (() => {
   const testimonials = Array.from(document.querySelectorAll('.testimonial-card'));
+
+  if (!testimonials.length) {
+    return { next: () => {}, show: () => {} };
+  }
+
   let current = 0;
   const INTERVAL = 5000;
 
@@ -20,15 +25,7 @@ const Carousel = (() => {
   };
 
   show();
-  setInterval(next, INTERVAL);
+  const timer = setInterval(next, INTERVAL);
 
-  return { next, show };
+  return { next, show, stop: () => clearInterval(timer) };
 })();
-
-/*
-========================================
-INICIAR
-========================================
-*/
-
-showTestimonials();
