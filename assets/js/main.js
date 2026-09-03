@@ -41,12 +41,35 @@ const App = (() => {
     }
   };
 
+  const initModalityCards = () => {
+    const cards = document.querySelectorAll('.modalidades .card');
+
+    cards.forEach(card => {
+      const selectCard = () => {
+        cards.forEach(item => {
+          const isSelected = item === card;
+          item.classList.toggle('selected', isSelected);
+          item.setAttribute('aria-pressed', String(isSelected));
+        });
+      };
+
+      card.addEventListener('click', selectCard);
+      card.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          selectCard();
+        }
+      });
+    });
+  };
+
   /**
    * INICIALIZAR TUDO
    */
   const init = () => {
     initSmoothScroll();
     initFloatingButton();
+    initModalityCards();
     console.log('🥋 La Casa da Luta - App Inicializado');
   };
 
