@@ -4,7 +4,7 @@
  * Implementa caching para offline e performance
  */
 
-const CACHE_NAME = 'lacasadaluta-v1';
+const CACHE_NAME = 'grenaldaluta-v1';
 const CACHE_FILES = [
   '/',
   '/index.html',

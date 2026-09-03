@@ -3,7 +3,7 @@
 ## 📋 Antes de Colocar no Ar
 
 ### 🎯 ESSENCIAL (Bloqueantes)
-- [ ] Domínio configurado (`lacasadaluta.com.br`)
+- [ ] Domínio configurado (`grenaldaluta.com.br`)
 - [ ] SSL/HTTPS ativado
 - [ ] Telefone correto em `config.js` e `index.html`
 - [ ] Email correto em `config.js`

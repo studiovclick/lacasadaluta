@@ -75,8 +75,8 @@ Edit `assets/js/config.js`:
 ```javascript
 const Config = {
   phone: '5551994698455',
-  email: 'contato@lacasadaluta.com.br',
-  instagram: '@lacasadaluta1',
+  email: 'contato@grenaldaluta.com.br',
+  instagram: '@grenaldaluta1',
   // ...
 };
 ```
@@ -215,8 +215,8 @@ Gera:
 ## 📞 Contato & Suporte
 
 - **WhatsApp:** (51) 9469-8455
-- **Email:** contato@lacasadaluta.com.br
-- **Instagram:** @lacasadaluta1
+- **Email:** contato@grenaldaluta.com.br
+- **Instagram:** @grenaldaluta1
 
 ---
 

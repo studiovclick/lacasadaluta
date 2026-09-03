@@ -193,7 +193,7 @@ LOCAL                  GIT                    CLOUD
                     Trigger                (Auto Deploy)
                                            │
                                       Live Domain
-                                    lacasadaluta.
+                                    grenaldaluta.
                                       com.br ✓
 ```
 

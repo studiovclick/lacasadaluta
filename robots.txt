@@ -15,7 +15,7 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemaps
-Sitemap: https://lacasadaluta.com.br/sitemap.xml
+Sitemap: https://grenaldaluta.com.br/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1

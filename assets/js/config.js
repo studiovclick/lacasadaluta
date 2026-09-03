@@ -7,12 +7,12 @@
 const Config = {
   // DADOS DE CONTATO
   phone: '5551994698455',
-  email: 'contato@lacasadaluta.com.br',
-  website: 'https://lacasadaluta.com.br',
+  email: 'contato@grenaldaluta.com.br',
+  website: 'https://grenaldaluta.com.br',
 
   // REDE SOCIAL
-  instagram: '@lacasadaluta1',
-  facebook: 'lacasadaluta',
+  instagram: '@grenaldaluta1',
+  facebook: 'grenaldaluta',
 
   // ENDEREÇO
   address: 'Rua Exemplo, 123 - Porto Alegre, RS',
@@ -43,7 +43,7 @@ const Config = {
 
   // ENDPOINTS (se houver backend)
   api: {
-    baseUrl: 'https://api.lacasadaluta.com.br',
+    baseUrl: 'https://api.grenaldaluta.com.br',
     endpoints: {
       contact: '/api/contact',
       newsletter: '/api/newsletter'
