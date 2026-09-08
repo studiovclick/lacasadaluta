@@ -52,10 +52,29 @@
 
     }
 
+    .about-kicker {
+
+        font-size: 0.8rem;
+
+    }
+
     .about-text p {
 
         font-size: 1rem;
         line-height: 1.6;
+
+    }
+
+    .about-text .about-lead {
+
+        font-size: 1.1rem;
+
+    }
+
+    .about-value {
+
+        align-items: flex-start;
+        font-size: 0.95rem;
 
     }
 
