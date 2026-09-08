@@ -31,15 +31,15 @@ EFEITO GLOW DA IDENTIDADE
     0% {
 
         box-shadow:
-        0 0 5px rgba(78,163,216,0.3),
-        0 0 12px rgba(200,16,46,0.15);
+        0 0 5px rgba(121,185,197,0.24),
+        0 0 12px rgba(59,130,246,0.2);
 
     }
 
     50% {
 
         box-shadow:
-        0 0 20px rgba(78,163,216,0.8),
+        0 0 20px rgba(59,130,246,0.7),
         0 0 36px rgba(200,16,46,0.35);
 
     }
@@ -47,8 +47,8 @@ EFEITO GLOW DA IDENTIDADE
     100% {
 
         box-shadow:
-        0 0 5px rgba(78,163,216,0.3),
-        0 0 12px rgba(200,16,46,0.15);
+        0 0 5px rgba(121,185,197,0.24),
+        0 0 12px rgba(59,130,246,0.2);
 
     }
 
