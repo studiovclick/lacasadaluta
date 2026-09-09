@@ -148,7 +148,7 @@ npm start
 // Testar no console do navegador:
 Config.openWhatsApp('Teste do site');
 // Ou:
-abrirWhats('Seu Nome', '5551994698455');
+abrirWhats('Seu Nome', '5500000000000');
 ```
 
 Deve abrir uma aba com WhatsApp.

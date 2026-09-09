@@ -5,7 +5,7 @@
 
 const WhatsApp = (() => {
   const button = document.querySelector('.floating-whatsapp');
-  const PHONE = '5551994698455';
+  const PHONE = '5500000000000';
   const DEFAULT_MESSAGE = 'Olá, vim pelo site da La Casa da Luta e gostaria de informações.';
 
   const open = (message = DEFAULT_MESSAGE) => {

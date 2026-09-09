@@ -6,7 +6,7 @@
 
 const Config = {
   // DADOS DE CONTATO
-  phone: '5551994698455',
+  phone: '5500000000000',
   email: 'contato@grenaldaluta.com.br',
   website: 'https://grenaldaluta.com.br',
 

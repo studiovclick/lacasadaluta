@@ -63,6 +63,40 @@ const App = (() => {
     });
   };
 
+  const initSupportModals = () => {
+    const triggers = document.querySelectorAll('[data-open-support-modal]');
+    const modals = document.querySelectorAll('.support-modal');
+
+    const closeModal = modal => {
+      modal.hidden = true;
+      document.body.classList.remove('modal-open');
+    };
+
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const modal = document.getElementById(trigger.dataset.openSupportModal);
+        if (!modal) return;
+        modal.hidden = false;
+        document.body.classList.add('modal-open');
+        modal.querySelector('.support-modal-close')?.focus();
+      });
+    });
+
+    modals.forEach(modal => {
+      modal.querySelector('[data-close-support-modal]')?.addEventListener('click', () => closeModal(modal));
+      modal.addEventListener('click', event => {
+        if (event.target === modal) closeModal(modal);
+      });
+      modal.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => closeModal(modal));
+      });
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') modals.forEach(closeModal);
+    });
+  };
+
   /**
    * INICIALIZAR TUDO
    */
@@ -70,6 +104,7 @@ const App = (() => {
     initSmoothScroll();
     initFloatingButton();
     initModalityCards();
+    initSupportModals();
     console.log('🥋 La Casa da Luta - App Inicializado');
   };
 

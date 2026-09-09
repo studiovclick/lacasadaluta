@@ -116,8 +116,9 @@
         </nav>
 
         <!-- BOTÃO WHATSAPP -->
-        <a
-          href="https://wa.me/5551994698455"
+        
+        <!--<a
+          href="https://wa.me/5500000000000"
           class="btn-whatsapp"
           target="_blank"
           rel="noopener noreferrer"
@@ -125,7 +126,7 @@
         >
           <i class="bi bi-whatsapp" aria-hidden="true"></i>
           Fale Conosco
-        </a>
+        </a> -->
       </div>
     </header>
 
@@ -148,7 +149,7 @@
         </p>
         <br><br>
 
-        <div class="hero-buttons">
+        <div class="hero-buttons" data-aos="fade-down" data-aos-delay="400">
           <a href="#modalidades" class="btn-primary">
             Conheça as Modalidades
           </a>
@@ -279,23 +280,21 @@
           </div>
 
           <div class="social-buttons">
-            <a
-              href="https://wa.me/5551994698455?text=Ol%C3%A1%2C%20quero%20ajudar%20no%20projeto%20social%20da%20Grenal%20da%20Luta."
+            <button
+              type="button"
               class="btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
+              data-open-support-modal="help-modal"
             >
               Quero Ajudar !
-            </a>
+            </button>
 
-            <a
-              href="https://wa.me/5551994698455?text=Ol%C3%A1%2C%20quero%20ser%20parceiro%20da%20Grenal%20da%20Luta."
+            <button
+              type="button"
               class="btn-secondary"
-              target="_blank"
-              rel="noopener noreferrer"
+              data-open-support-modal="partner-modal"
             >
               Seja Parceiro
-            </a>
+            </button>
           </div>
         </div>
 
@@ -366,7 +365,7 @@
             <p>Muay-Thai</p>
 
             <!--button
-              onclick="abrirWhats('Professor Gustavo', '5551994698455')"
+              onclick="abrirWhats('Professor Gustavo', '5500000000000')"
               aria-label="Enviar mensagem para Professor Gustavo via WhatsApp"
             >
               Falar no WhatsApp
@@ -386,7 +385,7 @@
             <p>Jiu-Jitsu</p>
 
             <!--<button
-              onclick="abrirWhats('Professor André', '5551994698455')"
+              onclick="abrirWhats('Professor André', '5500000000000')"
               aria-label="Enviar mensagem para Professor André via WhatsApp"
             >
               Falar no WhatsApp
@@ -406,7 +405,7 @@
             <p>BOXE</p>
 
             <!--button
-              onclick="abrirWhats('Professor Gustavo', '5551994698455')"
+              onclick="abrirWhats('Professor Gustavo', '5500000000000')"
               aria-label="Enviar mensagem para Professor Gustavo via WhatsApp"
             >
               Falar no WhatsApp
@@ -431,7 +430,7 @@
   </p>
 
   <!--button
-    onclick="abrirWhats('Gustavo Silveira', '5551994698455')"
+    onclick="abrirWhats('Gustavo Silveira', '5500000000000')"
     aria-label="Enviar mensagem para Gustavo Silveira via WhatsApp"
   >
     Falar no WhatsApp
@@ -453,7 +452,7 @@
         <p>Venha fazer parte da família Grenal da Luta.</p>
 
         <a
-          href="https://wa.me/5551994698455"
+          href="https://wa.me/5500000000000"
           target="_blank"
           rel="noopener noreferrer"
           class="btn-primary"
@@ -476,8 +475,8 @@
           <div class="contact-card">
             <i class="bi bi-whatsapp"></i>
             <h3>WhatsApp</h3>
-            <p>(51) 9469-8455</p>
-            <a href="https://wa.me/5551994698455" target="_blank" rel="noopener noreferrer">Falar agora</a>
+            <p>00 00000-0000</p>
+            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">Falar agora</a>
           </div>
 
           <div class="contact-card">
@@ -533,12 +532,49 @@
         <div>
           <h3>Contato</h3>
 
-          <p>(51) 9469-8455</p>
+          <p>00 00000-0000</p>
 
           <p>@grenaldaluta1</p>
         </div>
       </div>
     </footer>
+
+    <!-- OPÇÕES DE APOIO -->
+    <div class="support-modal" id="help-modal" role="dialog" aria-modal="true" aria-labelledby="help-modal-title" hidden>
+      <div class="support-modal-content">
+        <button type="button" class="support-modal-close" data-close-support-modal aria-label="Fechar janela"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+        <span class="support-modal-kicker">Quero ajudar</span>
+        <h2 id="help-modal-title">Como você gostaria de ajudar?</h2>
+        <p>Toda ajuda transforma vidas. Escolha uma forma de contribuir:</p>
+        <div class="support-options">
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Conheci%20o%20projeto%20social%20pelo%20site%20e%20gostaria%20de%20fazer%20uma%20doa%C3%A7%C3%A3o.%20Gostaria%20de%20saber%20como%20posso%20contribuir." target="_blank" rel="noopener noreferrer"><i class="bi bi-heart" aria-hidden="true"></i> Fazer uma doação</a>
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20contribuir%20com%20a%20doa%C3%A7%C3%A3o%20de%20alimentos%2C%20roupas%20ou%20materiais.%20Como%20posso%20ajudar%3F" target="_blank" rel="noopener noreferrer"><i class="bi bi-gift" aria-hidden="true"></i> Doar materiais</a>
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20contribuir%20com%20a%20doa%C3%A7%C3%A3o%20de%20materiais%20esportivos.%20Como%20posso%20ajudar%3F" target="_blank" rel="noopener noreferrer"><i class="bi bi-trophy" aria-hidden="true"></i> Doar materiais esportivos</a>
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20contribuir%20com%20a%20doa%C3%A7%C3%A3o%20de%20materiais%20escolares.%20Como%20posso%20ajudar%3F" target="_blank" rel="noopener noreferrer"><i class="bi bi-book" aria-hidden="true"></i> Doar materiais escolares</a>
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Conheci%20o%20projeto%20social%20pelo%20site%20e%20quero%20ser%20volunt%C3%A1rio.%20Gostaria%20de%20saber%20como%20participar." target="_blank" rel="noopener noreferrer"><i class="bi bi-people" aria-hidden="true"></i> Quero ser voluntário</a>
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Conheci%20o%20projeto%20social%20pelo%20site%20e%20gostaria%20de%20ajudar%20divulgando%20o%20projeto." target="_blank" rel="noopener noreferrer"><i class="bi bi-megaphone" aria-hidden="true"></i> Divulgar o projeto</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="support-modal" id="partner-modal" role="dialog" aria-modal="true" aria-labelledby="partner-modal-title" hidden>
+      <div class="support-modal-content">
+        <button type="button" class="support-modal-close" data-close-support-modal aria-label="Fechar janela"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+        <span class="support-modal-kicker">Seja parceiro</span>
+        <h2 id="partner-modal-title">Que tipo de parceria você deseja propor?</h2>
+        <p>Sua empresa pode fazer parte dessa transformação:</p>
+        <div class="support-options">
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Conheci%20o%20projeto%20social%20e%20tenho%20interesse%20em%20conhecer%20as%20possibilidades%20de%20patroc%C3%ADnio%20e%20parceria." target="_blank" rel="noopener noreferrer"><i class="bi bi-building" aria-hidden="true"></i> Patrocinar o projeto</a>
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20as%20possibilidades%20de%20apoio%20financeiro%20mensal%20ao%20projeto%20social." target="_blank" rel="noopener noreferrer"><i class="bi bi-cash-coin" aria-hidden="true"></i> Apoio financeiro mensal</a>
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Tenho%20interesse%20em%20fazer%20uma%20parceria%20com%20doa%C3%A7%C3%A3o%20de%20produtos%20ou%20equipamentos.%20Como%20podemos%20conversar%3F" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-seam" aria-hidden="true"></i> Doação de produtos</a>
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Tenho%20interesse%20em%20apoiar%20o%20projeto%20com%20alimenta%C3%A7%C3%A3o.%20Como%20podemos%20conversar%3F" target="_blank" rel="noopener noreferrer"><i class="bi bi-apple" aria-hidden="true"></i> Apoio com alimentação</a>
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20oferecer%20servi%C3%A7os%20profissionais%20ao%20projeto%20social.%20Como%20podemos%20conversar%3F" target="_blank" rel="noopener noreferrer"><i class="bi bi-person-workspace" aria-hidden="true"></i> Oferecer serviços</a>
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Tenho%20interesse%20em%20apoiar%20uma%20a%C3%A7%C3%A3o%20ou%20evento%20do%20projeto.%20Como%20podemos%20conversar%3F" target="_blank" rel="noopener noreferrer"><i class="bi bi-bullseye" aria-hidden="true"></i> Apoiar eventos</a>
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20propor%20uma%20parceria%20de%20divulga%C3%A7%C3%A3o%20para%20o%20projeto%20social." target="_blank" rel="noopener noreferrer"><i class="bi bi-megaphone" aria-hidden="true"></i> Parceria de divulgação</a>
+          <a class="support-option" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Tenho%20uma%20outra%20ideia%20de%20parceria%20para%20o%20projeto%20social.%20Gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer"><i class="bi bi-handshake" aria-hidden="true"></i> Outra parceria</a>
+        </div>
+      </div>
+    </div>
 
     <!-- JAVASCRIPT -->
     <!-- CONFIG GLOBAL -->

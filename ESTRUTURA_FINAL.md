@@ -165,7 +165,7 @@ const Module = (() => {
 ### 🔄 Config.js (Centralizado)
 ```javascript
 Config = {
-  phone: '5551994698455',
+   phone: '5500000000000',
   messages: {...},
   animations: {...},
   openWhatsApp(msg) { ... }

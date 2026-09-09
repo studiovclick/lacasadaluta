@@ -60,7 +60,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 0;
+    padding: 14px 0;
 
 }
 
@@ -83,21 +83,28 @@ body {
 .menu {
 
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 8px;
 
 }
 
 .menu a {
 
-    color: white;
+    color: rgba(255,255,255,0.86);
     text-decoration: none;
-    transition: 0.3s;
+    padding: 10px 12px;
+    border-bottom: 2px solid transparent;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    transition: 0.3s ease;
 
 }
 
 .menu a:hover {
 
     color: var(--sky-blue);
+    border-bottom-color: var(--sky-blue);
 
 }
 
@@ -105,7 +112,7 @@ body {
 
 .hero {
 
-    height: 100vh;
+    height: clamp(520px, 68vh, 460px);
 
     background:
         linear-gradient(105deg, rgba(20,20,20,0.9), rgba(200,16,46,0.42) 55%, rgba(59,130,246,0.28)),
@@ -130,8 +137,8 @@ body {
     inset: 0;
 
     background:
-        linear-gradient(105deg, rgba(20,20,20,0.92), rgba(80,18,28,0.5) 55%, rgba(200,16,46,0.34)),
-        rgba(0,0,0,0.42);
+        linear-gradient(105deg, rgba(20,20,20,0.58), rgba(80,18,28,0.24) 55%, rgba(200,16,46,0.16)),
+        rgba(0,0,0,0.18);
 
 }
 
@@ -141,6 +148,8 @@ body {
 
     position: relative;
     z-index: 2;
+    max-width: 820px;
+    padding: 32px 0;
 
 }
 
@@ -148,8 +157,10 @@ body {
 
 .hero h1 {
 
-    font-size: 70px;
+    font-size: clamp(3rem, 6vw, 4.4rem);
     font-family: 'Oswald', sans-serif;
+    line-height: 0.98;
+    text-shadow: 0 3px 18px rgba(0,0,0,0.45);
 
 }
 
@@ -344,6 +355,147 @@ body {
 .btn-primary:hover {
 
     transform: scale(1.05);
+
+}
+
+/* OPÇÕES DE APOIO */
+
+.social-buttons button {
+
+    font: inherit;
+    cursor: pointer;
+
+}
+
+.support-modal {
+
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: rgba(0,0,0,0.74);
+
+}
+
+.support-modal[hidden] {
+
+    display: none;
+
+}
+
+.modal-open {
+
+    overflow: hidden;
+
+}
+
+.support-modal-content {
+
+    position: relative;
+    width: min(560px, 100%);
+    max-height: min(720px, 90vh);
+    overflow-y: auto;
+    padding: 34px;
+    background: linear-gradient(145deg, #242424, #121212);
+    border: 1px solid rgba(121,185,197,0.4);
+    border-top: 4px solid var(--red);
+    border-radius: 12px;
+    box-shadow: 0 24px 70px rgba(0,0,0,0.55);
+
+}
+
+.support-modal-kicker {
+
+    color: var(--accent-yellow);
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+}
+
+.support-modal-content h2 {
+
+    margin: 8px 42px 8px 0;
+    color: var(--sky-blue);
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    line-height: 1.1;
+
+}
+
+.support-modal-content > p {
+
+    margin-bottom: 20px;
+    color: rgba(255,255,255,0.78);
+
+}
+
+.support-modal-close {
+
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.25s ease;
+
+}
+
+.support-modal-close:hover,
+.support-modal-close:focus-visible {
+
+    background: var(--red);
+    border-color: var(--red);
+
+}
+
+.support-options {
+
+    display: grid;
+    gap: 10px;
+
+}
+
+.support-option {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 15px;
+    border: 1px solid rgba(121,185,197,0.22);
+    border-radius: 7px;
+    background: rgba(255,255,255,0.045);
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.25s ease;
+
+}
+
+.support-option i {
+
+    min-width: 22px;
+    color: var(--accent-yellow);
+    font-size: 1.15rem;
+    text-align: center;
+
+}
+
+.support-option:hover,
+.support-option:focus-visible {
+
+    border-color: var(--sky-blue);
+    background: rgba(36,87,197,0.25);
+    color: var(--white);
+    transform: translateX(4px);
 
 }
 
@@ -844,12 +996,21 @@ MENU MOBILE
 
     display: none;
 
-    background: none;
-    border: none;
+    position: fixed;
+    top: 17px;
+    right: 5%;
+    z-index: 1001;
+    width: 46px;
+    height: 46px;
+    background: var(--red);
+    border: 1px solid rgba(255,255,255,0.24);
+    border-radius: 6px;
 
     color: white;
 
-    font-size: 35px;
+    font-size: 1.7rem;
+    line-height: 1;
+    transition: background 0.3s ease, transform 0.3s ease;
 
     cursor: pointer;
 
@@ -868,17 +1029,19 @@ MENU MOBILE
     top: 0;
     right: -100%;
 
-    width: 300px;
+    width: min(320px, 86vw);
     height: 100vh;
 
-    background: #000;
+    background: linear-gradient(160deg, #171717, #080808);
 
-    padding: 80px 30px;
+    padding: 96px 24px 30px;
 
     display: flex;
     flex-direction: column;
 
-    gap: 25px;
+    gap: 8px;
+    border-left: 3px solid var(--red);
+    box-shadow: -18px 0 40px rgba(0,0,0,0.35);
 
     transition: .4s;
 
@@ -910,7 +1073,30 @@ LINKS
 
     text-decoration: none;
 
+    padding: 14px 16px;
+    border-left: 3px solid transparent;
+    border-radius: 3px;
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
+    letter-spacing: 0.04em;
+    transition: 0.25s ease;
+
+}
+
+.mobile-menu a:hover,
+.mobile-menu a:focus-visible {
+
+    color: var(--sky-blue);
+    background: rgba(255,255,255,0.06);
+    border-left-color: var(--sky-blue);
+
+}
+
+.mobile-menu-button:hover,
+.mobile-menu-button:focus-visible {
+
+    background: #a80f2d;
+    transform: translateY(-1px);
 
 }
 

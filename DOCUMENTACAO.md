@@ -74,7 +74,7 @@ Acesse: `http://localhost:8000`
 Edit `assets/js/config.js`:
 ```javascript
 const Config = {
-  phone: '5551994698455',
+  phone: '5500000000000',
   email: 'contato@grenaldaluta.com.br',
   instagram: '@grenaldaluta1',
   // ...
@@ -90,7 +90,7 @@ Config.openWhatsApp('Olá! Gostaria de informações.');
 Config.sendEmail('Assunto da mensagem');
 
 // Abrir WhatsApp (com nome)
-abrirWhats('Professor João', '5551994698455');
+abrirWhats('Professor João', '5500000000000');
 ```
 
 ---
@@ -214,7 +214,7 @@ Gera:
 
 ## 📞 Contato & Suporte
 
-- **WhatsApp:** (51) 9469-8455
+- **WhatsApp:** 00 00000-0000
 - **Email:** contato@grenaldaluta.com.br
 - **Instagram:** @grenaldaluta1
 
